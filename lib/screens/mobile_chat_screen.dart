@@ -36,9 +36,10 @@ class MobileChatScreen extends StatelessWidget {
             child: ChatList(),
           ),
           TextField(
+            style: TextStyle(color: Colors.white),
             decoration: InputDecoration(
               filled: true,
-              fillColor: mobileChatBoxColor,
+              // fillColor: mobileChatBoxColor,
               prefixIcon: const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
                 child: Icon(

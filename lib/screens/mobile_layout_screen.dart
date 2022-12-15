@@ -34,7 +34,7 @@ class MobileLayoutScreen extends StatelessWidget {
           ],
           bottom: const TabBar(
             indicatorColor: tabColor,
-            indicatorWeight: 4,
+            indicatorWeight: 3,
             labelColor: tabColor,
             unselectedLabelColor: Colors.grey,
             labelStyle: TextStyle(
@@ -42,13 +42,13 @@ class MobileLayoutScreen extends StatelessWidget {
             ),
             tabs: [
               Tab(
-                text: 'CHATS',
+                text: 'Chats',
               ),
               Tab(
-                text: 'STATUS',
+                text: 'Status',
               ),
               Tab(
-                text: 'CALLS',
+                text: 'Calls',
               ),
             ],
           ),
