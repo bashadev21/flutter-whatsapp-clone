@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:whatsappclone/features/auth/controller/auth_controller.dart';
 
 import '../../../colors.dart';
+import '../../../common/utils/utils.dart';
 
 class OtpScreen extends ConsumerStatefulWidget {
   static const String routeName = '/otp-screen';
@@ -58,23 +59,10 @@ class _OtpScreenState extends ConsumerState<OtpScreen> {
                     counterText: '',
                     hintText: '-  -  -  -  -  -',
                     hintStyle: TextStyle(fontSize: 30, letterSpacing: 0),
-                    focusedBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: tabColor, width: 2.0),
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white, width: 1.0),
-                    ),
-                    disabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(
-                        color: tabColor,
-                        width: 2.0,
-                      ),
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    border: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white, width: 1.0),
-                    )),
+                    focusedBorder: greenLineDecoration,
+                    enabledBorder: whiteLineDecoration,
+                    disabledBorder: greenLineDecoration,
+                    border: whiteLineDecoration),
               ),
             )
           ],
